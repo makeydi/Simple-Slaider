@@ -1,0 +1,70 @@
+.container {
+    background-color: rgb(66, 66, 66);
+    padding: 50px;
+    margin: 50px auto;
+    width: 1000px;
+    border-radius: 10px;
+}
+
+.slaider {
+    height: 600px;
+    width: 602px;
+    border: solid 2px black;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+    transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.slaider-film {
+    display: flex;
+    position: absolute;
+    left: 0;
+    border: none;
+    height: 600px;
+    padding: 0;
+    margin: 0;
+}
+
+.picture {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0;
+    
+}
+
+button {
+    border-radius: 50%;
+    background-color: inherit;
+    width: 70px;
+    height: 70px;
+    border: none;
+    z-index: 3;
+}
+
+button:hover {
+    border: wheat 2px solid;
+    cursor: pointer;
+}
+
+.right {
+    position: absolute;
+    top: 45%;
+    left: 88%;
+}
+
+.left {
+    position: absolute;
+    top: 45%;
+    right: 88%;
+    transform: scale(-1,1);
+    pointer-events: none;
+}
+
+.arrow-right, .arrow-left {
+    width: 40px;
+    z-index: 2;
+}
